@@ -1,0 +1,66 @@
+ <html>
+
+ <head>
+   <title> Family recognition</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+
+ </head>
+
+ <body>
+   <div class="container">
+
+     <center>
+       <br><br>
+<img src="https://eqfl.org/sites/default/files/MENU_PAGE_HEADERS/FAMILY_RECOGNITION.png">
+<img class="family" src="https://th.bing.com/th/id/OIP.AG74PNJaydi3_FcNopPxQwHaLH?pid=ImgDet&rs=1">
+<br>
+<br>
+<br>
+
+       <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+       <b class="object">
+         Father
+         <hr>
+        Mother
+         <hr>
+        Son
+         <hr>
+         Daughter
+         <hr>
+       </b>
+       <label>Webcam View - </label>
+<div id="camera">
+
+
+</div>
+<br><br>
+<div id="result">
+  
+
+</div>
+
+       <br><br>
+<button class="btn btn-info" onclick="takePic()">Take a Picture</button>
+       <br><br>
+<button class="btn btn-success" onclick="Recognize()">Recognize Family Member</button>
+       <br><br>
+
+       <p  style="font-size: 22px;">Family Member : <span id="result_object"> 
+       </span></p>
+       <p style="font-size: 22px;">Accuracy : <span id="result_accuracy">
+       </span></p>
+     </center>
+
+   </div>
+   <script src="main.js"></script>
+
+ </body>
+
+ </html>
